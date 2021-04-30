@@ -30,4 +30,4 @@ jobs:
         run: |
           JSON=`cat example.json`
           echo $JSON
-          echo ${{ toJson($JSON) }}
+          echo ${{ fromJson(JSON) }}
